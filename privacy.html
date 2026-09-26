@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Screniva — Datenschutz</title>
+    <link rel="icon" href="./assets/icon-1024.png" type="image/png" />
+    <link rel="stylesheet" href="brand/tokens.css" />
+    <style>
+      body {
+        margin: 0;
+        background: var(--color-ink, #0b1026);
+        color: var(--color-mist, #f4f6fc);
+        font-family: Commissioner, system-ui, sans-serif;
+        font-weight: 300;
+        line-height: 1.55;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 4rem 1.5rem 6rem;
+      }
+      h1,
+      h2 {
+        font-family: "Bricolage Grotesque", system-ui, sans-serif;
+        font-weight: 300;
+      }
+      h1 {
+        font-size: 2rem;
+        letter-spacing: -0.03em;
+      }
+      a {
+        color: var(--color-electric-blue, #025cf8);
+      }
+      .meta {
+        opacity: 0.7;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="meta">Stand: Schema 0.25 · Direct Distribution</p>
+      <h1>Datenschutz</h1>
+      <p>
+        Screniva ist ein nativer macOS-Screencast-Editor. Projekte liegen lokal unter
+        <code>~/Movies/Screniva/</code>. Es gibt kein Tracking und keine Analytics-SDKs.
+      </p>
+
+      <h2>Daten auf dem Gerät</h2>
+      <ul>
+        <li>Bildschirm-, Mikrofon- und Webcam-Aufnahmen</li>
+        <li>Timeline, Overlays, Cursor-Track, Untertitel</li>
+        <li>Diagnose-Logs und Crash-Notizen (lokal, bis du ein Support-Paket exportierst)</li>
+      </ul>
+
+      <h2>Optionaler Netzwerkzugriff</h2>
+      <ul>
+        <li>
+          <strong>Cloud-TTS</strong> (OpenRouter): nur wenn du einen API-Key hinterlegst und
+          Cloud-TTS erlaubst; MDM kann das abschalten
+          (<code>screniva.managed.cloudTTSDisabled=true</code>).
+        </li>
+        <li>
+          <strong>Cloud-Sync</strong>: nur wenn Sync aktiviert ist (iCloud Documents).
+        </li>
+        <li>
+          <strong>ASR-Untertitel</strong>: bevorzugt on-device; Legacy-Fallback kann Apple-Server
+          nutzen.
+        </li>
+        <li>
+          <strong>Update-Check</strong>: holt optional einen JSON-Feed von
+          <code>https://chbrdk.github.io/screniva-site/appcast.json</code>.
+        </li>
+      </ul>
+
+      <h2>Berechtigungen</h2>
+      <p>
+        Bildschirmaufnahme (ScreenCaptureKit); optional Mikrofon, Kamera und Spracherkennung.
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        Support: Menü <strong>Hilfe → Support-Paket erstellen…</strong> oder
+        <a href="mailto:support@screniva.app">support@screniva.app</a>
+      </p>
+      <p><a href="./index.html">Zurück zur Website</a></p>
+    </main>
+  </body>
+</html>

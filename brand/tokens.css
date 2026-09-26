@@ -1,0 +1,116 @@
+/* Local brand faces — same families as Screniva/Fonts (app bundle). */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./fonts/bricolage-200.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./fonts/bricolage-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./fonts/bricolage-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("./fonts/commissioner-200.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("./fonts/commissioner-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("./fonts/commissioner-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Azeret Mono";
+  src: url("./fonts/azeret-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Azeret Mono";
+  src: url("./fonts/azeret-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Screniva design tokens — keep in sync with ScrenivaBrandColors (paths.ts)
+   and Screniva/ScrenivaDesign.swift. See knowledge/corporate-design.md */
+
+:root {
+  --color-electric-blue: #025cf8;
+  --color-magenta: #f9468d;
+  --color-deep-royal: #121dc8;
+  --color-navy: #02209d;
+  --color-record-red: #f7192c;
+  --color-ink: #0b1026;
+  --color-mist: #f4f6fc;
+
+  --color-brand-primary: var(--color-electric-blue);
+  --color-brand-secondary: var(--color-magenta);
+  --color-recording: var(--color-record-red);
+  --color-success: #33b873;
+  --color-warning: #f5b833;
+  --color-paper: #eef0f7;
+  --color-hairline: color-mix(in srgb, var(--color-ink) 12%, transparent);
+
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--color-electric-blue) 0%,
+    var(--color-deep-royal) 48%,
+    var(--color-magenta) 100%
+  );
+  --gradient-brand-soft: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-electric-blue) 18%, transparent),
+    color-mix(in srgb, var(--color-magenta) 12%, transparent)
+  );
+
+  --font-display: "Bricolage Grotesque", "Avenir Next", sans-serif;
+  --font-body: "Commissioner", "Avenir Next", sans-serif;
+  --font-mono: "Azeret Mono", "SF Mono", ui-monospace, monospace;
+  --weight-hair: 200;
+  --weight-thin: 300;
+  --weight-book: 400;
+
+  --radius-chip: 7px;
+  --radius-control: 9px;
+  --radius-card: 12px;
+  --radius-panel: 14px;
+  --radius-mark: 22%;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 48px;
+  --space-3xl: 80px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-med: 420ms;
+  --measure: min(72rem, calc(100% - 2.5rem));
+}

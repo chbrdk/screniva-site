@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Screniva — Brand</title>
+    <meta
+      name="description"
+      content="Screniva Corporate Design: Screen, Record-Dot, dünne Brand-Fonts — Bricolage · Commissioner · Azeret."
+    />
+    <link rel="stylesheet" href="./tokens.css" />
+    <link rel="stylesheet" href="./site.css" />
+    <link rel="icon" href="./assets/icon-1024.png" type="image/png" />
+  </head>
+  <body>
+    <div class="topbar">
+      <span class="topbar__rec"><span class="topbar__rec-dot" aria-hidden="true"></span> Rec 00:00:12:08</span>
+      <a href="#tokens">Tokens</a>
+    </div>
+
+    <header class="hero">
+      <div class="hero__screen" aria-hidden="true">
+        <img
+          class="hero__icon"
+          src="./assets/icon-1024.png"
+          width="1024"
+          height="1024"
+          alt=""
+          decoding="async"
+        />
+      </div>
+      <div class="hero__copy">
+        <p class="hero__brand">Screniva</p>
+        <h1 class="hero__line">Signal auf der Stage.</h1>
+        <p class="hero__lede">
+          Broken-C Monitor. Record-Dot als Lichtquelle. Tokens aus dem Icon —
+          nicht aus dem Startup-Baukasten.
+        </p>
+        <a class="hero__cta" href="#tokens">01 · Palette</a>
+      </div>
+      <div class="hero__stand" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="band" id="tokens" aria-labelledby="colors-title">
+        <div class="band__inner">
+          <p class="kicker">01 · Farbe</p>
+          <h2 id="colors-title">Sieben Lanes</h2>
+          <p class="band__lede">
+            Wie Timeline-Spuren — nicht als Karten-Grid. Klick kopiert Hex.
+            Gleiche Werte wie <code>ScrenivaDesign</code> /
+            <code>ScrenivaBrandColors</code>.
+          </p>
+          <div class="lanes">
+            <button class="lane" type="button" data-hex="#025CF8" style="background: var(--color-electric-blue)" aria-label="electricBlue kopieren">
+              <span class="lane__name">electricBlue</span>
+              <span class="lane__hex">#025CF8</span>
+              <span class="lane__role">Primary · Video</span>
+            </button>
+            <button class="lane" type="button" data-hex="#F9468D" style="background: var(--color-magenta)" aria-label="magenta kopieren">
+              <span class="lane__name">magenta</span>
+              <span class="lane__hex">#F9468D</span>
+              <span class="lane__role">Camera · Energy</span>
+            </button>
+            <button class="lane" type="button" data-hex="#121DC8" style="background: var(--color-deep-royal)" aria-label="deepRoyal kopieren">
+              <span class="lane__name">deepRoyal</span>
+              <span class="lane__hex">#121DC8</span>
+              <span class="lane__role">Gradient</span>
+            </button>
+            <button class="lane" type="button" data-hex="#02209D" style="background: var(--color-navy)" aria-label="navy kopieren">
+              <span class="lane__name">navy</span>
+              <span class="lane__hex">#02209D</span>
+              <span class="lane__role">Depth</span>
+            </button>
+            <button class="lane" type="button" data-hex="#F7192C" style="background: var(--color-record-red)" aria-label="recordRed kopieren">
+              <span class="lane__name">recordRed</span>
+              <span class="lane__hex">#F7192C</span>
+              <span class="lane__role">REC only</span>
+            </button>
+            <button class="lane" type="button" data-hex="#0B1026" style="background: var(--color-ink)" aria-label="ink kopieren">
+              <span class="lane__name">ink</span>
+              <span class="lane__hex">#0B1026</span>
+              <span class="lane__role">Stage</span>
+            </button>
+            <button class="lane lane--mist" type="button" data-hex="#F4F6FC" style="background: var(--color-mist)" aria-label="mist kopieren">
+              <span class="lane__name">mist</span>
+              <span class="lane__hex">#F4F6FC</span>
+              <span class="lane__role">Wash</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="type-title">
+        <div class="band__inner">
+          <p class="kicker">02 · Typografie</p>
+          <h2 id="type-title">Bricolage · Commissioner</h2>
+          <p class="band__lede">
+            Dünn und absichtlich ungewöhnlich:
+            <strong>Bricolage Grotesque</strong> ExtraLight für Wordmark,
+            <strong>Commissioner</strong> Light für Text,
+            <strong>Azeret Mono</strong> für Timecode — keine Inter/Sora/Plex-Defaults.
+          </p>
+          <div class="type-slab">
+            <div class="type-row">
+              <span class="type-row__tag">Hero</span>
+              <p class="type-hero">Screniva</p>
+              <span class="type-row__meta">Bricolage 200</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Title</span>
+              <p class="type-title">Projekte · Aufnehmen · Schneiden</p>
+              <span class="type-row__meta">Bricolage 300</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Body</span>
+              <p class="type-body">
+                Produktnahe Leseschrift — ruhig genug für Inspector und Library,
+                technisch genug für ein Capture-Tool.
+              </p>
+              <span class="type-row__meta">Commissioner 300</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Caption</span>
+              <p class="type-caption">Library · Inspector · Timeline Labels</p>
+              <span class="type-row__meta">Commissioner 200</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Mono</span>
+              <p class="type-mono">00:12:34.567 · REC</p>
+              <span class="type-row__meta">Azeret Mono 300</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="shape-title">
+        <div class="band__inner">
+          <p class="kicker">03 · Form</p>
+          <h2 id="shape-title">Bezel &amp; Rhythmus</h2>
+          <p class="band__lede">
+            Gradient nur als Screen-Inhalt. Weißer Rahmen = Icon-Monitor.
+            Radius und Spacing 1:1 zur Mac-App.
+          </p>
+          <div class="shape-grid">
+            <div class="grad-block" aria-label="Brand-Gradient mit REC"></div>
+            <div class="radius-stack">
+              <div class="radius-tile" style="border-radius: var(--radius-chip)">CHIP 7</div>
+              <div class="radius-tile" style="border-radius: var(--radius-control); background: var(--color-electric-blue)">CTRL 9</div>
+              <div class="radius-tile" style="border-radius: var(--radius-card); background: var(--color-magenta)">CARD 12</div>
+              <div class="radius-tile" style="border-radius: var(--radius-panel); background: var(--color-deep-royal)">PANEL 14</div>
+            </div>
+          </div>
+          <div class="space-meter" aria-label="Spacing-Skala">
+            <div class="space-meter__row">
+              <span>xs</span>
+              <div class="space-meter__bar" style="width: var(--space-xs)"></div>
+              <span>4</span>
+            </div>
+            <div class="space-meter__row">
+              <span>sm</span>
+              <div class="space-meter__bar" style="width: var(--space-sm)"></div>
+              <span>8</span>
+            </div>
+            <div class="space-meter__row">
+              <span>md</span>
+              <div class="space-meter__bar" style="width: var(--space-md)"></div>
+              <span>12</span>
+            </div>
+            <div class="space-meter__row">
+              <span>lg</span>
+              <div class="space-meter__bar" style="width: var(--space-lg)"></div>
+              <span>16</span>
+            </div>
+            <div class="space-meter__row">
+              <span>xl</span>
+              <div class="space-meter__bar" style="width: var(--space-xl)"></div>
+              <span>24</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--ink" aria-labelledby="usage-title">
+        <div class="band__inner">
+          <p class="kicker">04 · Regeln</p>
+          <h2 id="usage-title">Do / Don’t</h2>
+          <p class="band__lede">
+            Eine chromatische Aussage pro Fläche. Record-Rot ist Signal — kein
+            Deko-Accent.
+          </p>
+          <div class="rules">
+            <article class="rule">
+              <h3>Do</h3>
+              <p>
+                Accent über Tokens. Blau für CTAs. Magenta sparsam als Energie.
+                Dünne Display-Weights für Hero/Titles.
+              </p>
+              <div class="rule__demo">
+                <span class="chip chip--blue">Neues Projekt</span>
+                <span class="chip chip--magenta">Camera</span>
+              </div>
+            </article>
+            <article class="rule">
+              <h3>Recording</h3>
+              <p>
+                Nur <code>recordRed</code> für REC und Stop. Nie für Fehler oder
+                Warnungen.
+              </p>
+              <div class="rule__demo">
+                <span class="chip chip--rec"><span class="topbar__rec-dot" aria-hidden="true"></span> REC 00:42</span>
+              </div>
+            </article>
+            <article class="rule">
+              <h3>Don’t</h3>
+              <p>
+                Kein Full-Page-Rainbow. Keine weit laufenden Display-Fonts.
+                Keine Soft-Card-Grids für die Palette. Kein zweites Lila.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="app-title">
+        <div class="band__inner">
+          <p class="kicker">05 · Mac App</p>
+          <h2 id="app-title">In Screniva verdrahtet</h2>
+          <p class="band__lede">
+            Dieselben Familien liegen als Variable-TTFs in
+            <code>Screniva/Fonts/</code>, werden beim Launch registriert und über
+            <code>ScrenivaDesign.Typography</code> / <code>EditorPalette</code>
+            in Library, Chrome und Timecode genutzt — ExtraLight/Light, nicht Bold.
+          </p>
+          <div class="type-slab">
+            <div class="type-row">
+              <span class="type-row__tag">Swift</span>
+              <p class="type-mono">Font.custom("Bricolage Grotesque", size: 28).weight(.ultraLight)</p>
+              <span class="type-row__meta">hero</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Swift</span>
+              <p class="type-mono">Font.custom("Commissioner", size: 13).weight(.light)</p>
+              <span class="type-row__meta">body</span>
+            </div>
+            <div class="type-row">
+              <span class="type-row__tag">Swift</span>
+              <p class="type-mono">Font.custom("Azeret Mono", size: 12).weight(.light)</p>
+              <span class="type-row__meta">mono</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      Screniva Brand · lokale Fonts in <code>brand/fonts</code> · App
+      <code>Screniva/Fonts</code> · Spec <code>knowledge/corporate-design.md</code>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Kopiert</div>
+    <script src="./brand.js" type="module"></script>
+  </body>
+</html>
